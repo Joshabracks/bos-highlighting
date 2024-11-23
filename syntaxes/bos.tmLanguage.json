@@ -30,7 +30,7 @@
 				},
 				{
 					"name": "support.type.bos",
-					"match":  "(?<=^\\s+\\w+\\s+)\\w+$"
+					"match":  "(?<=^\\s+(:*?\\[*?\\w+\\]*?|\\[<\\w+>\\])\\s+?)\\w+$"
 				},
 				{
 					"name": "support.type.bos",
@@ -51,10 +51,6 @@
 			"patterns": [
 				{
 					"name": "string.bos",
-					"match": "~\\w+\\b"
-				},
-				{
-					"name": "string.bos",
 					"match": "\\b\\w+\\b"
 				}
 			]
@@ -63,28 +59,12 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.bos",
-					"match": "#\\w+\\b"
-				},
-				{
-					"name": "constant.numeric.bos",
-					"match": "\\[#\\]\\w+\\b"
-				},
-				{
-					"name": "constant.numeric.bos",
 					"match": "\\b\\d+\\b"
 				}
 			]
 		},
 		"bool": {
 			"patterns": [
-				{
-					"name": "entity.name.tag.bos",
-					"match": "\\!\\w+\\b"
-				},
-				{
-					"name": "entity.name.tag.bos",
-					"match": "\\[\\!\\]\\w+\\b"
-				},
 				{
 					"name": "entity.name.tag.bos",
 					"match": "\\b(true|false)\\b"
@@ -103,7 +83,7 @@
 				},
 				{
 					"name": "variable.name.bos",
-					"match": "^\\s+\\w+"
+					"match": "^\\s+:*?\\[*?\\w+\\]*?"
 				}
 			]
 		}

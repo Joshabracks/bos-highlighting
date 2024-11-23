@@ -20,40 +20,38 @@ comment
 ```
 
 ### Type Definition
-```js
+```c#
 // the type name is notated with an @ symbol
 @type_name
-    // number field is notated with an octothorpe
-    #cost
-    // string field is notated by a tilde
-    ~name
-    // boolean field is notated by an exclamaition point
-    !is_true
+    // float, int, string and boolean primatives are supported
+    int cost
+    string name
+    boolean is_true
     // arrays are notated by open and closed square brackets  
-    [#]number_array
-    [~]string_array
-    [!]boolean_array
+    [float]float_array
+    [string]string_array
+    [boolean]boolean_array
     []any_array
-    // set length arrays are preceeded with the length
-    2[#]set_length_number_array
+    2[int]set_length_integer_array
     // required fields are preceeded with an asterisk
-    * #id
+    * int id
     // default values can be set with an equal sign
-    #parent_id = 0
+    int parent_id = 0
     // defined item types are notated by the type name within enclosed angle brackets
-    <defined_type>defined_type
+    <defined_type> defined_type
+    [<defined_type>] defined_type
 ```
 
-```
+```c
 // example type definition
 @item
-    * ~name
-    * ~description
-    * [#]value
-    * #weight
-    [<discipline>]disciplines
-    [<merit>]merits
-    [<flaw>]flaws
+    *string name
+    *string description
+    *[int] value
+    *float weight
+    [<discipline>] disciplines
+    [<merit>] merits
+    [<flaw>] flaws
 ```
 
 ### Enumerables (enum)
@@ -68,14 +66,6 @@ Enumerables are noted with the enumerable type followed by a line separated list
 ```
 By default, enumerables are assigned numerical values
 however, they can be given other values by properly notating the enumberable
-
-```js
-<discipline>
-    ~TACTICS    tactics
-    ~COMBAT     combat
-    ~ESPIONAGE  espionage
-    ~TRICKERY   trickery
-```
 
 Enumerables can also be declared in tuples, triplets and so on...
 
