@@ -1,0 +1,25 @@
+{
+    "name": "bos-highlighting",
+    "displayName": "bos highlighting",
+    "description": "highlighting support for branching object system (bos)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.95.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "bos",
+            "aliases": ["bos", "bos"],
+            "extensions": [".bos"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "bos",
+            "scopeName": "source.bos",
+            "path": "./syntaxes/bos.tmLanguage.json"
+        }]
+    }
+}
