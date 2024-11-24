@@ -80,12 +80,11 @@ Enumerables can also be declared in tuples, triplets and so on...
 ```
 
 ### Object
-Objects are notated with a percentage sign and the type of object
-The keys and fields are separated with a colon
+Object types are declared without indent at the first line of the object.
 
 
 ```yaml
-%item
+item
     name: gold coin
     description: small circular currency minted from gold
     value: [100]
@@ -97,7 +96,7 @@ The keys and fields are separated with a colon
 Several objects can be listed through enumerators using the following shorthand.  (using the discipline enum)
 
 ```yaml
-%item <discipline>
+item <discipline>
     name: <~discipline>  // gets string name of enum
     id: <discipline>     // gets default of enum
     lowercase_name: <~~discipline>
@@ -114,17 +113,17 @@ In the above case, an enum that looks like the following:
 is the same as writing a list like so..
 
 ```yaml
-%item
+item
     name: TACTICS
     id: 0
     lowercase_name: tactics
     capitalized_name: Tactics
-%item
+item
     name: ESPIONAGE
     id: 1
     lowercase_name: espionage
     capitalized_name: Espionage
-%item
+item
     name: LEADERSHIP
     id: 2
     lowercase_name: leadership
