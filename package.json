@@ -2,7 +2,7 @@
     "name": "bos-highlighting",
     "displayName": "bos highlighting",
     "description": "highlighting support for branching object system (bos)",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.95.0"
     },
