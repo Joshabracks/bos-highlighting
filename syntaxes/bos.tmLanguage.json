@@ -42,7 +42,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.bos",
-					"match": "^(@|%)\\w+\\b"
+					"match": "^@\\w+\\b"
+				},
+				{
+					"name": "constant.language",
+					"match": "^\\w+\\b"
 				}
 			]
 		},
