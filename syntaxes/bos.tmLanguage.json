@@ -34,7 +34,7 @@
 				},
 				{
 					"name": "support.type.bos",
-					"match": "=\\w+"
+					"match": "(?<==)\\w+"
 				}
 			]
 		},
@@ -88,6 +88,10 @@
 				{
 					"name": "variable.name.bos",
 					"match": "^\\s+:*?\\[*?\\w+\\]*?"
+				},
+				{
+					"name": "entity.name.function",
+					"match": "(?<=^\\w+.*?)\\w+"
 				}
 			]
 		}
