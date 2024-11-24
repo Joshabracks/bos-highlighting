@@ -22,5 +22,7 @@
             "path": "./syntaxes/bos.tmLanguage.json"
         }]
     },
-    "publisher": "beetnick82"
+    "publisher": "beetnick82",
+    "repository": {"url": "https://github.com/Joshabracks/bos-highlighting"},
+    "license": "MIT"
 }
